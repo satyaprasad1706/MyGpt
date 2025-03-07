@@ -19,7 +19,7 @@ with st.chat_message("user"):
 st.session_state.message.append({'role': 'user','content':prompt})
 
 if prompt:
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAy0hYLok7rvd436GHGCfcu58Sn_XR_-M8"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY"
 
     data = {
         'contents':[{'parts':[{'text':prompt}]}]
